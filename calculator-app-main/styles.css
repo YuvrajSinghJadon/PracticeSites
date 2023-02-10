@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+:root {
+  /* //backgroud */
+  --Very-dark-violet1: hsl(268, 75%, 9%);
+  --Very-dark-violet: hsl(268, 71%, 12%);
+
+  --Very-dark-desaturated-blue-screen: hsl(224, 36%, 15%);
+  /* keys */
+  --Dark-violet: hsl(281, 89%, 26%);
+  --Vivid-magenta: hsl(285, 91%, 52%);
+
+  --Pure-cyan: hsl(176, 100%, 44%);
+  --Soft-cyan: hsl(177, 92%, 70%);
+
+  --Very-dark-violet: hsl(268, 47%, 21%);
+  --Dark-magenta: hsl(290, 70%, 36%);
+
+  --Light-yellow: hsl(52, 100%, 62%);
+  --Very-dark-blue: hsl(198, 20%, 13%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  background: var(--Very-dark-violet1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  width: 45vh;
+  height: 60vh;
+  padding: 1rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Light-yellow);
+}
+input {
+  direction: rtl;
+  background: var(--Very-dark-violet);
+  color: var(--Light-yellow);
+  width: 41vh;
+  height: 10vh;
+  margin: 1rem 0 1rem 0;
+}
+button {
+  background: var(--Dark-violet);
+  box-shadow: 0 0.25rem 0 0 var(--Vivid-magenta);
+  color: var(--Light-yellow);
+  width: 4rem;
+  height: 2.5rem;
+  border: 0.1rem solid;
+  border-radius: 0.5rem;
+}
+.toggle {
+  width: 6rem;
+  height: 1.5rem;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 375px) {
+  main {
+    height: 30rem;
+  }
+  input {
+    height: 3rem;
+  }
+  .keys {
+    height: ;
+  }
+  button {
+    width: 3rem;
+  }
+  .action > button {
+    height: 3rem;
+    width: 3rem;
+  }
+}
