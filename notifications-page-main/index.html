@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <h3>Notifications <a href="" style="color:white;font-size:.9rem;margin-left:.5rem;border:1px solid black ;border-radius:20%;background:var(--Blue);padding:0 .5rem 0 .5rem">3</a></h3>
+        <a href="" id="markall">Mark all as read</a>
+      </div>
+      <div class="panel">
+        <div class="notifications unread">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="" />
+          <div class="text">
+           <a href="">Mark Webber</a> reacted to your recent post <a href="" class="clickables">My first tournament today!</a><div id="circle"></div>  <br />
+         <div class="time">1m ago <br /> </div></div>
+        </div>
+        <div class="notifications unread">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="" />
+          <div class="text">
+           <a href="">Angela Gray</a> followed you <div id="circle"></div><br/>
+             <div class="time">5m ago <br/></div> </div> 
+        </div>
+        <div class="notifications unread">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="" />
+          <div class="text"><a href="">Jacob
+            Thompson</a> has joined your group <a href="" class="clickables">Chess Club</a><div id="circle"></div>  <br />
+            <div class="time">1 day ago <br /></div>  </div></div> 
+        
+        <div class="notifications read">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+          <div class="text">
+           <a href="">Rizky Hasanuddin</a>  sent you a private message <br/>
+             <div class="time"> 5 days ago <br/ ></div> <a href=""><div class="detail">
+              Hello, thanks for setting up the Chess Club. I've been a member for
+              a few weeks now and I'm already having lots of fun and improving my
+              game.
+            </div></a></div>
+          
+          </div>
+            
+        <div class="notifications read">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="" />
+          <div class="text">
+           <a href="">Kimberly Smith</a>  commented on your picture <br />
+           <div class="time">1 week ago <br /></div> 
+          </div><a href=""></a>
+          <img   id="chess" src="./assets/images/image-chess.webp" alt="" />
+
+        </div>
+        <div class="notifications read">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="" />
+          <div class="text">
+           <a href="">Nathan Peterson </a> reacted to your recent post <a href="" class="clickables">5 end-game strategies to
+            increase your win rate</a>  <br />
+          <div class="time">2 weeks ago <br /></div> 
+          </div>
+          
+        </div>
+        <div class="notifications read">
+          <img  src="./assets/images/avatar-anna-kim.webp" alt="" />
+          <div class="text">
+           <a href="">Anna Kim</a>  left the group <a href="" class="clickables">Chess Club</a>  <br />
+          <div class="time">2 weeks ago <br /></div> 
+          </div> 
+        </div>
+        </div>
+      </div>
+
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --Linear-gradient: hsl(237, 63%, 64%);
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+body {
+  background: var(--Light-Grayish-Blue);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h3 {
+  font-size: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.price {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+}
+
+.cards {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  color: var(--Dark-Grayish-Blue);
+  align-items: center;
+  line-height: 2rem;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  height: 18rem;
+}
+.features {
+  text-align: center;
+}
+.center {
+  height: 21rem;
+  color: white;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 3.5rem 0.5rem 3.5rem;
+  border-radius: 0.3rem;
+}

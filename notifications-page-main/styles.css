@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  background: var(--Very-light-grayish-blue);
+  padding: 5rem;
+}
+main {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 22% 0 22%;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.3rem 1.3rem;
+  padding-left: 0.7rem;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+}
+.notifications {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  background: var(--Very-light-grayish-blue);
+  margin: 0.25rem 1.5rem 0.25rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.read {
+  background: white;
+}
+img {
+  width: 5%;
+  height: 5%;
+}
+.detail {
+  color: var(--Dark-grayish-blue);
+  border: 0.1rem solid var(--Light-grayish-blue-1);
+  margin: 1rem 2rem 0rem 0rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+#chess {
+  margin-left: 10rem;
+  width: 7%;
+}
+.time {
+  color: var(--Grayish-blue);
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+.text {
+  margin-left: 1rem;
+}
+#circle {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-bottom: 0.1rem;
+  margin-left: 0.1rem;
+  background: var(--Red);
+  border-radius: 50%;
+}
+.clickables {
+  display: inline;
+  color: var(--Dark-grayish-blue);
+  font-weight: 800;
+}
+#markall {
+  font-weight: 500;
+  color: var(--Grayish-blue);
+}
+a {
+  font-weight: 800;
+  color: black;
+}
+a:hover {
+  color: var(--Blue);
+}
+#markall:hover {
+  color: var(--Blue);
+}
+.detail:hover {
+  background: var(--Light-grayish-blue-1);
+}
+#chess:hover {
+  border: 0.1rem solid var(--Light-grayish-blue-1);
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+}
+@media (max-width: 375px) {
+  body {
+    background: white;
+    padding: 0;
+  }
+  main {
+    margin: 0;
+  }
+  .header {
+    display: flex;
+  }
+  img {
+    width: 15%;
+  }
+  .panel {
+    font-size: 0.9rem;
+  }
+  #chess {
+    /* display: none; */
+    margin-left: 0rem;
+    width: 15%;
+  }
+}
